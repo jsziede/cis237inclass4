@@ -10,6 +10,21 @@ namespace cis237inclass4
     {
         static void Main(string[] args)
         {
+            //instanciate the linked list
+            InClass4LinkedList inClass4LinkedList = new InClass4LinkedList();
+
+            //add content to the list
+            inClass4LinkedList.Add("A");
+            inClass4LinkedList.Add("B");
+            inClass4LinkedList.Add("C");
+            inClass4LinkedList.Add("D");
+            inClass4LinkedList.Add("E");
+
+            //loop
+            for (Node x = inClass4LinkedList.Head; x != null; x = x.Next)
+            {
+                Console.WriteLine(x.Data);
+            }
         }
     }
 }
