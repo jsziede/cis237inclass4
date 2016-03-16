@@ -38,6 +38,41 @@ namespace cis237inclass4
             {
                 Console.WriteLine(x.Data);
             }
+
+            GenericLinkedList<string> genericLinkedListString = new GenericLinkedList<string>();
+            GenericLinkedList<int> genericLinkedListInt = new GenericLinkedList<int>();
+
+            Console.WriteLine();
+
+            //add content to the list
+            genericLinkedListString.Add("A");
+            genericLinkedListString.Add("B");
+            genericLinkedListString.Add("C");
+            genericLinkedListString.Add("D");
+            genericLinkedListString.Add("E");
+
+            //loop
+            for (GenericNode<string> x = genericLinkedListString.Head; x != null; x = x.Next)
+            {
+                Console.WriteLine(x.Data);
+            }
+
+            Console.WriteLine();
+
+            //add content to the list
+            genericLinkedListInt.Add(1);
+            genericLinkedListInt.Add(2);
+            genericLinkedListInt.Add(3);
+            genericLinkedListInt.Add(4);
+            genericLinkedListInt.Add(5);
+
+            //loop
+            for (GenericNode<int> x = genericLinkedListInt.Head; x != null; x = x.Next)
+            {
+                Console.WriteLine(x.Data);
+            }
+
+            Console.WriteLine();
         }
     }
 }
