@@ -25,6 +25,19 @@ namespace cis237inclass4
             {
                 Console.WriteLine(x.Data);
             }
+
+            Console.WriteLine(inClass4LinkedList.Retrieve(3));
+
+            inClass4LinkedList.Delete(0);
+            inClass4LinkedList.Delete(1);
+            inClass4LinkedList.Delete(1);
+
+            Console.WriteLine();
+
+            for (Node x = inClass4LinkedList.Head; x != null; x = x.Next)
+            {
+                Console.WriteLine(x.Data);
+            }
         }
     }
 }
